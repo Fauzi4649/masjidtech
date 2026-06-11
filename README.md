@@ -183,8 +183,8 @@ class Announcement extends Model {
 
 ### Step-by-Step Installation :
 1. Clone the Repository
-git clone [https://github.com/](https://github.com/)[your-username]/masjid-tech.git
-cd masjid-tech
+git clone https://github.com/Fauzi4649/masjidtech.git
+cd masjidtech
 
 2. Install Dependencies
 
