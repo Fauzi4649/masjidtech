@@ -186,39 +186,40 @@ class Announcement extends Model {
 git clone https://github.com/Fauzi4649/masjidtech.git
 cd masjidtech
 
-2. Install Dependencies
+2. Install PHP Dependencies
 
 composer install
-npm install
 
-3. Environment Configuration
+3. Install Node Dependencies
+
+npm install
+npm run build
+
+4. Environment Configuration
 
 cp .env.example .env
 php artisan key:generate
-Edit .env and set your database credentials:
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=masjidtech
-    DB_USERNAME=root
-    DB_PASSWORD=
 
-4. Create Database 
+Then open .env and set your database credentials, for example:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=masjidtech
+DB_USERNAME=root
+DB_PASSWORD=
+
+5. Create the Database (if using MySQL)
 
 CREATE DATABASE masjidtech CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-5. Run migrations & seeders
+6. Run Migrations & Seeders
 
 php artisan migrate --seed
 
-6. Create storage link (for uploaded images)
+7. Create Storage Link (for image uploads)
 
 php artisan storage:link
-
-7. Build frontend assets
-
-npm install 
-npm run build
 
 8. Start the server
 
